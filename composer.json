@@ -1,0 +1,43 @@
+{
+    "name": "zys5210\/TencentIM",
+    "description": "腾讯云即时通信 SDK for PHP",
+    "keywords": [
+        "php",
+        "IM",
+        "即时通信",
+        "腾讯云"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "song",
+            "email": "53804059@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "tencent/tls-sig-api-v2": "^1.1",
+        "guzzlehttp/guzzle": "^6.4|^7.0",
+        "ext-json": "*",
+        "ext-simplexml": "*"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "autoload": {
+        "psr-4": {
+            "TencentIM\\": "./src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TencentIM\\ServiceProvider"
+            ]
+        },
+        "hyperf": {
+            "config": "TencentIM\\ConfigProvider"
+        }
+    }
+}
