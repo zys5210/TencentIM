@@ -5,7 +5,7 @@
 ## 安装
 
 ```shell
-$ composer require zys5210/TencentIM -vvv
+$ composer require zys5210/tencent_im -vvv
 ```
 
 > 说明：本项目默认会引入 [tencent/tls-sig-api-v2](https://github.com/tencentyun/tls-sig-api-v2-php) 扩展包，所以你不需要手动引入 `tencent/tls-sig-api-v2`,否则可能会造成依赖冲突
@@ -145,7 +145,7 @@ print_r($im->send('openim','sendmsg',$params));
 ## 在 Hyperf 中使用
 #### 发布配置文件
 ```php
-php bin/hyperf.php vendor:publish zys5210/TencentIM
+php bin/hyperf.php vendor:publish zys5210/tencent_im
 ```
 
 ##### 编写 .env 文件
