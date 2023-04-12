@@ -88,7 +88,7 @@ class IM implements IMInterface
      *
      * @return string
      */
-    protected function generateSign(string $identifier, int $expires = 15552000): string
+    public function generateSign(string $identifier, int $expires = 15552000): string
     {
         $api = new TLSSigAPIv2($this->config->get('sdk_app_id'), $this->config->get('secret_key'));
 
